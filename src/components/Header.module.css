@@ -1,0 +1,11 @@
+/* Header.module.css */
+.header {
+    background-color: var(--primario);
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: var(--blanco);
+    font-size: 2.8rem;
+}

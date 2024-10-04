@@ -1,0 +1,23 @@
+/* Navbar.module.css */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.contenedor-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
