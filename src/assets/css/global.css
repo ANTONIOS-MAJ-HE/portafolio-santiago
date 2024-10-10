@@ -1,9 +1,41 @@
-:root{
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --primario: #ffc107;
-    --secundario: #0097a7;
-    --gris: #757575;
+:root {
+    --blanco: #ffffff; /* Color para fondos y textos sobre fondos oscuros */
+    --oscuro: #212121; /* Color principal para texto sobre fondos claros */
+    --gris-claro: #f5f5f5; /* Para fondos claros */
+    --gris: #757575; /* Para textos secundarios y detalles */
+    --gris-oscuro: #424242; /* Para bordes y separadores */
+
+    --primario: #5ac7aa; /* Verde agua, para botones principales y elementos destacados */
+    --primario-claro: #a8e6cf; /* Fondo ligero del primario, tonos de verde agua */
+    --primario-oscuro: #3b9f84; /* Hover o estados activos del primario, tono más profundo */
+
+    --secundario: #00796b; /* Verde oscuro, para contrastar con el primario */
+    --secundario-claro: #48a999; /* Fondo ligero del secundario */
+    --secundario-oscuro: #004d40; /* Hover o estados activos del secundario */
+
+    --terciario: #b2dfdb; /* Un color suave, perfecto para fondos y detalles */
+    --terciario-claro: #e0f2f1; /* Fondos ligeros del terciario */
+    --terciario-oscuro: #80cbc4; /* Hover o estados activos del terciario */
+
+    --exito: #66bb6a; /* Verde para mensajes de éxito */
+    --exito-claro: #c8e6c9; /* Fondos de mensajes de éxito */
+    --exito-oscuro: #388e3c; /* Hover o botones de confirmación */
+
+    --advertencia: #ffa726; /* Naranja para advertencias y notificaciones */
+    --advertencia-claro: #ffcc80; /* Fondos de advertencias */
+    --advertencia-oscuro: #fb8c00; /* Hover para botones de advertencia */
+
+    --error: #e57373; /* Rojo suave para errores */
+    --error-claro: #ffcdd2; /* Fondos de error */
+    --error-oscuro: #d32f2f; /* Hover para botones de error */
+
+    --info: #29b6f6; /* Azul claro para mensajes informativos */
+    --info-claro: #bbdefb; /* Fondos de mensajes informativos */
+    --info-oscuro: #0288d1; /* Hover para botones de información */
+
+    --fondo-principal: #e8f5e9; /* Fondo principal con un toque de verde suave */
+    --fondo-secundario: #f1f8e9; /* Fondo para secciones secundarias */
+    --borde-suave: #cfd8dc; /* Para bordes ligeros y separadores */
 }
 
 /* Globales */

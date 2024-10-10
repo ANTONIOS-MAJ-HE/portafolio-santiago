@@ -1,23 +1,81 @@
-/* Navbar.module.css */
-.nav-bg {
-    background-color: var(--secundario);
-}
+/* src/components/Navbar.module.css */
 
-.contenedor-principal {
+.navbarBg {
+    background: rgba(33, 33, 33, 0.8); /* Fondo semitransparente para un efecto de vidrio */
+    backdrop-filter: blur(5px); /* Difumina ligeramente el fondo detrás del navbar */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+  }
+  
+  .navbarContent {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-}
-
-.contenedor-principal a {
+  }
+  
+  .navbarLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbarMenuIcon {
+    display: none;
+    font-size: 2rem;
+    color: var(--blanco);
+    cursor: pointer;
+  }
+  
+  .navbarLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .navbarLink {
     color: var(--blanco);
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.contenedor-principal a:hover {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbarLink:hover {
     background-color: var(--primario);
     color: var(--oscuro);
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Efecto de elevación al hacer hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbarLinks {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      background: rgba(33, 33, 33, 0.95); /* Fondo más oscuro al desplegar en móviles */
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: none;
+    }
+  
+    .navbarLinks.open {
+      display: flex;
+    }
+  
+    .navbarMenuIcon {
+      display: block;
+    }
+  }
+  

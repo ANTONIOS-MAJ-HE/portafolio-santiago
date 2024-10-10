@@ -9,12 +9,14 @@ import Services from './components/Services';
 import ProfileCard from './components/ProfileCard'; 
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import Video from './components/Video';
 import './assets/css/global.css';
 
 const App = () => {
   return (
     <>
-      <Header />
+      <Video />
+      {/* <Header /> */}
       <Navbar />
       <Hero />
       <Projects />

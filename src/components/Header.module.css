@@ -1,6 +1,7 @@
 /* Header.module.css */
 .headerHeader {
     background-color: var(--secundario);
+    background-color: rgba(0, 0, 0, 0.5); /* 50% de transparencia */
     padding: 20px;
     text-align: center;
 }

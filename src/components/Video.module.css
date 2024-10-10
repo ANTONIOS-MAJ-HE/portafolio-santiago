@@ -1,0 +1,33 @@
+/* src/components/Video.module.css */
+
+.videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el video esté detrás del contenido principal */
+  }
+  
+  .backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el fondo */
+    filter: brightness(50%) saturate(1.2); /* Ajusta el brillo y la saturación para mejorar la visibilidad */
+    transition: filter 0.3s ease; /* Transición suave para ajustes de filtro */
+  }
+  
+  /* Ajustes responsivos para mejorar la visibilidad en dispositivos móviles */
+  @media (max-width: 768px) {
+    .backgroundVideo {
+      filter: brightness(40%) saturate(1.3); /* Ajusta el brillo en móviles para mejor legibilidad */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .backgroundVideo {
+      filter: brightness(60%) saturate(1.1); /* Ajustes de filtro para pantallas grandes */
+    }
+  }
+  
