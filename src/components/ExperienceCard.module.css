@@ -1,0 +1,83 @@
+/* src/components/ExperienceCard.module.css */
+.card {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo más transparente */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.iconContainer {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.companyIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+}
+
+.company {
+  font-size: 1.8rem;
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.duration {
+  font-size: 1.4rem;
+  color: var(--gris-claro);
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 1.2rem;
+  color: var(--gris-claro);
+  margin-bottom: 1rem;
+}
+
+.experienceList {
+  border-left: 2px solid var(--secundario);
+  padding-left: 1rem;
+}
+
+.experienceItem {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.experienceDuration {
+  font-size: 1.2rem;
+  color: var(--gris-claro);
+  margin-top: 0.3rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--gris);
+  margin-top: 0.5rem;
+}
+
+.skills {
+  font-size: 1.2rem;
+  color: var(--primario);
+  font-weight: bold;
+}

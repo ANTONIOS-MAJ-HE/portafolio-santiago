@@ -10,6 +10,7 @@ import ProfileCard from './components/ProfileCard';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Video from './components/Video';
+import ExperienceList from './components/ExperienceList';
 import './assets/css/global.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       {/* <Header /> */}
       <Navbar />
       <Hero />
+      <ExperienceList />
       <Projects />
       <Skills />
       <Services />

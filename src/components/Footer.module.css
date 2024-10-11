@@ -1,0 +1,50 @@
+.footer {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente para combinar con el video */
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footerText {
+    font-size: 1.4rem;
+    margin: 0;
+    opacity: 0.85;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .socialLink {
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .socialLink:hover {
+    color: var(--primario); /* Color principal definido en tu tema */
+    transform: translateY(-3px);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .footerText {
+      font-size: 1.2rem;
+    }
+  
+    .socialLink {
+      font-size: 1.8rem;
+    }
+  }
+  

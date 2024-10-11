@@ -4,31 +4,31 @@ import styles from './ContactForm.module.css';
 
 const ContactForm = () => {
   return (
-    <section>
-      <h2>Contacto</h2>
-      <form className="formulario">
-        <fieldset>
-          <legend>Contactános llenando todos los campos</legend>
-          <div className="contenedor-campos">
-            <div className="campo">
-              <label>Nombre</label>
-              <input className="input-text" type="text" placeholder="Tu Nombre" />
+    <section className={styles.contactSection}>
+      <h2 className={styles.contactTitle}>Contacto</h2>
+      <form className={styles.contactForm}>
+        <fieldset className={styles.contactFieldset}>
+          <legend className={styles.contactLegend}>Contáctanos llenando todos los campos</legend>
+          <div className={styles.contactFields}>
+            <div className={styles.contactField}>
+              <label className={styles.contactLabel}>Nombre</label>
+              <input className={styles.contactInput} type="text" placeholder="Tu Nombre" />
             </div>
-            <div className="campo">
-              <label>Teléfono</label>
-              <input className="input-text" type="tel" placeholder="Tu Teléfono" />
+            <div className={styles.contactField}>
+              <label className={styles.contactLabel}>Teléfono</label>
+              <input className={styles.contactInput} type="tel" placeholder="Tu Teléfono" />
             </div>
-            <div className="campo">
-              <label>Correo</label>
-              <input className="input-text" type="email" placeholder="Tu Email" />
+            <div className={styles.contactField}>
+              <label className={styles.contactLabel}>Correo</label>
+              <input className={styles.contactInput} type="email" placeholder="Tu Email" />
             </div>
-            <div className="campo">
-              <label>Mensaje</label>
-              <textarea className="input-text"></textarea>
+            <div className={styles.contactField}>
+              <label className={styles.contactLabel}>Mensaje</label>
+              <textarea className={styles.contactTextarea} placeholder="Escribe tu mensaje aquí..."></textarea>
             </div>
           </div>
-          <div className="alinear flex">
-            <input className="boton w-sm-100" type="submit" value="Enviar" />
+          <div className={styles.contactAlignCenter}>
+            <input className={styles.contactButton} type="submit" value="Enviar" />
           </div>
         </fieldset>
       </form>

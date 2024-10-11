@@ -40,31 +40,55 @@
 
 /* Globales */
 
-html{
+/* Globales */
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
-}
-
-*, *:before, *:after{
+  }
+  
+  *, *:before, *:after {
     box-sizing: inherit; /* hack para box model */
-}
-
-body{
-    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1.6rem;
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, #DFE8F3 0%, var(--blanco) 100% );
-}
-
-h1{
+    background: transparent; /* Hacemos el fondo transparente para que el video se vea */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitamos que haya un scroll horizontal innecesario */
+  }
+  
+  h1 {
     font-size: 3.8rem;
-}
-h2{
+  }
+  
+  h2 {
     font-size: 2.8rem;
-}
-h3{
+  }
+  
+  h3 {
     font-size: 1.8rem;
-}
-
-h1, h2, h3{
+  }
+  
+  h1, h2, h3 {
     text-align: center;
-}
+    color: var(--blanco); /* Aseguramos que los textos sean visibles sobre el video */
+  }
+  
+  .app {
+    position: relative;
+    z-index: 1; /* Aseguramos que los elementos de la app estén por encima del video */
+  }
+  
+  section {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la visibilidad del contenido */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  

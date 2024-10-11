@@ -1,22 +1,132 @@
-/** Contacto **/
-
-.formulario {
-    background-color: var(--gris);
-    width: min(60rem, 100%); /** Utilizar el valor mas pequeño **/
+.contactSection {
+    padding: 2rem;
+    background-color: transparent; /* Fondo transparente para ver el video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactTitle {
+    font-size: 2.8rem;
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .contactForm {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
-}
-
-.formulario fieldset {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .contactFieldset {
     border: none;
-}
-
-.formulario legend{
+  }
+  
+  .contactLegend {
     text-align: center;
     font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 2rem;
     color: var(--primario);
-}
+    margin-bottom: 2rem;
+    animation: slideDown 0.8s ease-out;
+  }
+  
+  .contactFields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contactField {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactLabel {
+    font-size: 1.4rem;
+    color: var(--blanco);
+    margin-bottom: 0.5rem;
+  }
+  
+  .contactInput,
+  .contactTextarea {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--gris-claro);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contactInput:focus,
+  .contactTextarea:focus {
+    border-color: var(--primario);
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+  }
+  
+  .contactTextarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .contactAlignCenter {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .contactButton {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primario);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: var(--primario-hover);
+    transform: translateY(-2px);
+  }
+  
+  /* Animación para la entrada del formulario */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .contactForm {
+      padding: 1.5rem;
+    }
+  
+    .contactTitle {
+      font-size: 2.4rem;
+    }
+  
+    .contactButton {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+  
